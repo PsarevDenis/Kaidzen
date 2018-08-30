@@ -1,0 +1,11 @@
+body,html{
+    height:97%;
+}
+
+.add-one{
+  color:green;
+  text-align:center;
+  font-weigth:bolder;
+  cursor:pointer;
+  margin-top:10px;
+}

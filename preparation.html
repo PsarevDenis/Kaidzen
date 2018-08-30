@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Начало работы</title>
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/nicescroll.min.js"></script><!-- jquery nice scroll-->
+    <script src="js/pace.min.js"></script>
+    <!--page load progress bar-->
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <!--Portfolio Filter-->
+    <script src="js/flexslider.min.js"></script><!-- FlexSlider -->
+    <script src="js/waypoints.min.js"></script>
+    <!--Header Effect-->
+    <script src="js/custom.js"></script><!-- Custom JavaScript  -->
+    <script>
+        $('.add-one').click(function(){
+            var de = $('.dynamic-element').first().clone();
+            de.appendTo('.dynamic-stuff').show();
+            attach_delete();
+        });
+        
+        function attach_delete(){
+            $('.delete').off();
+            $('.delete').click(function(){
+            console.log("click");
+            $(this).closest('.form-group').remove();
+            });
+        }
+    </script>
+</head>
+
+<body data-spy="scroll" data-target="#ha-header">
+   <div class="navbar navbar-default navbar-fixed-top" id="ha-header">
+        <div class="container">
+            <div class="navbar-header">
+
+                <a class="navbar-brand logo" href="index.html">Kaidzen</a>
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#top">Кайдзен команда</a></li>
+
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center">
+            <form class="col-12">
+                <div class="form-group">
+                    <label for="department">Производство, цех</label>
+                    <select class="form-control" id="department">
+                        <option>АГЦ</option>
+                        <option>АГП</option>
+                        <option>ПХП</option>
+                        <option>ЛПЦ-1</option>
+                    </select>
+
+                </div>
+                <div class="form-group">
+                    <label for="inputProjectName">Название проекта</label>
+                    <input type="text" class="form-control" id="inputProjectName" placeholder="Сформулируйте тему для работы команды">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputProjectName">Заказчик</label>
+                    <input type="text" class="form-control" id="zakaz" placeholder="ФИО">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputProjectName">Лидер</label>
+                    <input type="text" class="form-control" id="lider" placeholder="ФИО">
+                </div>
+
+                <div class="form-group dynamic-stuff">
+                    <label for="inputProjectName">Участники</label>
+                    <input type="text" class="form-control dynamic-element" id="uchastnik1" placeholder="ФИО, max 12">
+
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="add-one">+ Добавить участника</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="button" class="form-control" value="Далее">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <footer></footer>
+
+</body>
+
+</html>

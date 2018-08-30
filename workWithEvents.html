@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Работа с мероприятиями</title>
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/nicescroll.min.js"></script><!-- jquery nice scroll-->
+    <script src="js/pace.min.js"></script>
+    <!--page load progress bar-->
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <!--Portfolio Filter-->
+    <script src="js/flexslider.min.js"></script><!-- FlexSlider -->
+    <script src="js/waypoints.min.js"></script>
+    <!--Header Effect-->
+    <script src="js/custom.js"></script><!-- Custom JavaScript  -->
+</head>
+
+<body>
+   <div class="navbar navbar-default navbar-fixed-top" id="ha-header">
+        <div class="container">
+            <div class="navbar-header">
+
+                <a class="navbar-brand logo" href="index.html">Kaidzen</a>
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#top">Кайдзен команда</a></li>
+
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+
+    <div class="container h-100">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Мероприятие</th>
+                    <th>В реализации</th>
+                    <th>Корневые причины</th>
+                    <th>Ответственный</th>
+                    <th>План срок</th>
+                    <th>Факт срок</th>
+                    <th>Финансирование</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Повестка</td>
+                    <td><input type="checkbox" class="form-control" id="realiz"></td>
+                    <td>
+                        <select class="form-control" id="department">
+                            <option>АГЦ</option>
+                            <option>АГП</option>
+                            <option>ПХП</option>
+                            <option>ЛПЦ-1</option>
+                        </select>
+                    </td>
+                    <td>Псарев Д.И.</td>
+                    <td>17.05.2018</td>
+                    <td>17.10.2018</td>
+                    <td>
+
+                        <select class="form-control" id="department">
+                            <option>Затратные</option>
+                            <option>Беззатратные</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="add-one">+ Добавить мероприятие</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer></footer>
+
+</body>
+</html>
