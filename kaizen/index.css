@@ -260,9 +260,9 @@ table {
 
 th,
 td:first-child {
-    background: #AFCDE7;
-    color: white;
+    background: #F26144;
     padding: 10px 20px;
+    color: #133046;
 }
 
 th,
